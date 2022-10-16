@@ -6,15 +6,29 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "node_modules/eslint/bin/eslint.js ."
+    "lint": "node_modules/eslint/bin/eslint.js .",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "homepage": "https://canvas.place/",
   "repository": "github:dynastic/place",
   "author": "Dynastic Development",
   "contributors": [
-    { "name": "AppleBetas", "email": "applebetas@dynastic.co", "url": "https://applebetas.co" },
-    { "name": "nullpixel", "email": "jamie@dynastic.co", "url": "https://nullpixel.uk" },
-    { "name": "Eric Rabil", "email": "eric@dynastic.co", "url": "https://ericrabil.com" }
+    {
+      "name": "AppleBetas",
+      "email": "applebetas@dynastic.co",
+      "url": "https://applebetas.co"
+    },
+    {
+      "name": "nullpixel",
+      "email": "jamie@dynastic.co",
+      "url": "https://nullpixel.uk"
+    },
+    {
+      "name": "Eric Rabil",
+      "email": "eric@dynastic.co",
+      "url": "https://ericrabil.com"
+    }
   ],
   "license": "AGPLv3",
   "devDependencies": {
@@ -71,6 +85,8 @@
     "raven": "^2.1.0",
     "speakeasy": "^2.0.0",
     "stream-file-archive": "^1.1.3",
-    "uWebSockets.js": "uNetworking/uWebSockets.js#v17.4.0"
-  }
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v17.4.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
